@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="slideshow.css">
+        <script src="slideshow.js"></script>
+    </head>
+    <body>
+
+        <h2>Slide Show</h2>
+        <div id="container">
+            <div id="block">
+                
+            </div>
+    
+            <div id="control">
+                <div id=control-sliders>
+                    <div>
+                        <input id="slider-button-interval" name="slider-button-interval" type="range" min="0" step="1" max="10" value="2">
+                        <label for="slider-button-interval">Interval: <span id="slider-output-interval"></span> s</label>
+                    </div>
+                    <div>
+                        <input id="slider-button-transition" name="slider-button-transition" type="range" min="100" step="100" max="1300" value="400">
+                        <label for="slider-button-transition">Transition: <span id="slider-output-transition"></span> ms</label>
+                    </div>
+                    <div>
+                        <input id="slider-button-step" name="slider-button-step" type="range" min="5" step="5" max="200" value="100">
+                        <label for="slider-button-step">Step time: <span id="slider-output-step"></span> ms</label>
+                    </div>
+                </div>
+                <div id="btn-group">
+                    <button id="random" value="random">Random</button>
+                    <button id="progressive" value="progressive">Progressive</button>
+                    <button id="horizontalSweep" value="horizontalSweep">Side sweep</button>
+                    <button id="verticalSweep" value="verticalSweep">Vertical sweep</button>
+                    <button id="corner" value="corner">Corner</button>
+                </div>
+            </div>
+
+            <div id="image-sets">
+                <!--div class="image-set">
+                    <div class="number-images">+3</div>
+                </div-->
+            </div>
+        </div>
+
+    </body>
+</html>

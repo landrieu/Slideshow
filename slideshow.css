@@ -1,0 +1,109 @@
+body{
+  font-family: Calibri;
+}
+
+h2{
+  text-align: center;
+}
+
+#container{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block{
+    width: 850px;
+    height: 410px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+}
+
+.block-line{
+  display: flex;
+  width: 100%;
+}
+
+#block .block-line .block-item{
+    height: 100%;
+}
+
+
+#control{
+  width: fit-content;
+  margin: auto;
+}
+
+#control-sliders{
+width: fit-content;
+margin: auto;
+}
+
+#btn-group button {
+  color: #0075ff;
+  background-color: #fff;
+  border: 2px solid #84bcff;
+  border-radius: 5px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin: 5px 10px;
+  font-weight: 600;
+}
+
+#btn-group button.selected{
+  background-color: #0075ff;
+  color: white; /* White text */
+}
+  
+  /* Clear floats (clearfix hack) */
+#btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#btn-group button:focus {
+  outline: none;
+}
+
+/* Add a background color on hover */
+#btn-group button:hover {
+  background-color: #84bcff;
+}
+
+#image-sets{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.image-set{
+  height: 80px;
+  width: 120px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.image-set:hover{
+  opacity: 0.9;
+}
+
+.image-set.selected{
+  border: 2px solid #0075ff;
+  
+}
+
+.number-images{
+  height: 20px;
+  width: 30px;
+  background-color: black;
+  opacity: 0.75;
+  color: #eee;
+  text-align: center;
+}
